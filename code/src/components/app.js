@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.sr.se/api/v2/channels?format=json&size=100").then((response) => {
+    fetch("https://api.sr.se/api/v2/channels?format=json&size=100").then((response) => {
       return response.json()
     }).then((json) => {
       console.log(json.channels)
@@ -29,8 +29,7 @@ class App extends React.Component {
             name={item.name}
             image={item.image}
             color={item.color}
-            player={item.liveaudio}
-          />
+            player={item.liveaudio} />
         })}
       </div>
     )
