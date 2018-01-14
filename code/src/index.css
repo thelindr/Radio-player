@@ -37,6 +37,13 @@ h1 {
 }
 
 audio {
+  width: 70%;
+  height: 20px;
   background-color: black;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.search {
+  width: 50vw;
+  margin: 20px auto;
 }
